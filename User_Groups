@@ -1,0 +1,37 @@
+## USERS & GROUPS
+
+- r : read
+- w : write
+- x : execute
+- - : means thr permissions have been turned off
+- owner : Creator of a file or directory 
+- group : groups of other users that the file is assigned to
+- others : all other users on the sytem
+
+## MAnaging groups
+
+## File permissions
+
+## SSH
+
+drwxrwxr-x 2 vagrant vagrant 4096 Oct 31 16:14 bethel/
+the owner of this directory is vagrant as its stated
+
+* change default shell of a user
+- {sudo chsh -s /bin/bash <username>}
+
+### CHANGING PERMISSIONS
+
+ugoa
+- u : user
+- g : group
+- o : others
+- a : all
+
+#### To change the permissions of a file or directory
+- Used chmod u=xxx,g=ddd,o=gggg <filename>, e.g for the perimission of bio.txt that has -rw-rw-r--, changing the permission --> chmod u=rwx,g=rwx,o=rw bio.txt Now, we have -rwxrwxrw-
+- ll : Use ll to view the permission/mode
+
+#### To change the group or the owner
+- chown : change owner. --> chown newuser filename/directory name
+-chown for group ---> chown newuser:newgroup filename/directory name

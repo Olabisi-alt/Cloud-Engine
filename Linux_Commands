@@ -1,0 +1,97 @@
+- $ : It means that the user is logged in as a Regular user.
+
+- # : It means that the user is logged in as a Root user.
+
+- cat /etc/passwd : displays the contents of the /etc/passwd file, which is a system file that holds essential information about user accounts on the system.
+
+- history : Past history/ logs
+
+- clear : Clear the terminal
+
+### File and Directory Management**
+- pwd - Print current working directory
+- ls - List directory contents
+- ls -l - (detailed list)
+- ls -a - (show hidden files)
+- ls -la : 
+- --help : a command to demand for help about a particular command. E.g 👇
+- ll --help : help option to know more information about the ll command.
+- ll :  is a commonly used alias for ls -l, which is the command to list files in a directory in a long format.
+- cd - Change directory
+- cd .. : (move to parent directory)
+- cd ../ or cd -  : go backwards 
+- mkdir - Create a new directory
+- rmdir - Remove an empty directory
+- touch - Create a new empty file
+- rm - Remove a file
+- rm -r - (remove a directory and its contents)
+- cp - Copy files or directories
+- mv - Move or rename files or directories
+- ll
+- /etc : contains the adminstrative configuration(config) files
+
+- -- : 
+
+- - : 
+
+## Additional Linux Commands
+- who -uH : Info about the present user including name, last login time 
+
+- $PATH : It's called the Path variable and entered like this -> echo $PATH. It searches for path, its a place the interpreter always go to if it searches for a command for a command and doesn't find it.
+
+- cd -\
+
+- /bin/date : Today's date, adding the date command to my path
+
+- alias : An alisa or nickname specifically for a command function. Create an alias -  alias new cmd='real cmd', forexample- alias path='echo $PATH'
+
+- cd ~ : To go back to the Home page 
+- cd / : Go back to the Root directory
+
+- option left or right : To move the cursor from one word to the other, either left ways or right ways
+
+- tab key : To autocomplete your commands
+
+- echo $OSTYPE : To know the OS of your PC
+
+- history *the number id of the history you want* - history 40 will take you to the command number 40 in the history section 
+- !number of history - will do same as history *number* e.g !40
+
+ 
+### metacharacters
+- pipe : ( | ) , 
+- ampersand : >>> &
+- semicolon : ; - used for miltiple commands, semi-colon is used to separate each commands since its used on a line. E.g date ; ls -la ; date
+- right parenthesis : )
+- left parenthesis : (
+- greater than : >
+- less than : <
+- sort : it takes characters at the beginning of every line and sort them alphabetically 
+- cat /etc/passwd | sort : So its a continuation of sort command relating to etc/passwd>
+- sort --help : to know more about sort command
+- less --help : less command let's you break the contents on the screen to fit the size of the page, then the user can use arrow keys to go up and down the page. e.g - cat /etc/passwd | sort | less
+- sequential command : when the user wants the commands to run in a sequence/ a sequencial order. That is one command completes its job before the next takes over
+- troff -me -veryLargeFile - 
+- background command :
+- alias and multilple commands : e.g alias p='pwd' ; ls -CF
+- how to get info about commands : go the path via doing echo i.e echo $PATH
+- /bin : is where all commands resides
+- ls /bin : all list of the available commands 
+- $PATH : Its an environment variable, 
+- Add altschool1 to the path(PATH) : enter --->export PATH=$PATH://home/vagrant/altschool1 (note pwd is /home/vagrant). When echo $PATH is entered, the result is -->/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin. After exporting altschool1 into the path, now the result of path when echoed is -->/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin://home/vagrant/altschool1. (This means if i add a comand into altschool1 and its ran, it wll be located in altschool1 but if its not added to the path and the command is ran, the command will not run
+
+###
+- bin
+- boot
+- dev
+- home : where you have ubuntu, files, folders
+- /$ : means you are at the root and cant go backwards any further with this cmd- cd ../
+- home/vagrant : my home section on the vagrant connected to virtualbox 
+
+- r : view whats in a file, see what files and su files it contains
+- w : change the files content, rename it, edit or delete it
+- x : run the file as a program
+- - : this symbol means permissions has beeen turned off. e.g it should be rwx but if you see rw-r--r--, this means you only have permission to read and write first, then read and then read only
+- a command that lets you know if the file is a directory, you'll see / at the end of the name
+
+

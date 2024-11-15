@@ -1,0 +1,9 @@
+- apt install ufw : install firewall
+- ufw app list : list application firewall profile
+- ufw allow ssh : allow applications
+- ufw deny 22 : Deny communication on a port
+- ufw enable : Enable firewall
+- ufw allow from 203.0.113.4 : allow communication from IP
+- ufw deny out 25 : Deny Communication out
+- ufw status numbered : Display in a numbered format
+- ufw delete 2 : Delete rule based on number
